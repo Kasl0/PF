@@ -1,5 +1,3 @@
-{-# OPTIONS_GHC -Wno-unrecognised-pragmas #-}
-{-# HLINT ignore "Redundant bracket" #-}
 sqr :: Double -> Double
 sqr x = x * x
 
@@ -13,7 +11,7 @@ swap :: (Int, Char) -> (Char, Int)
 swap (n, c) = (c, n)
 
 threeEqual :: (Int, Int, Int) -> Bool
-threeEqual (x, y, z) = (x == y && x == z)
+threeEqual (x, y, z) = x == y && x == z
 
 triangle :: (Double, Double, Double) -> Double
 triangle (a, b, c) = sqrt ((a + b + c)/2 * ((a + b + c)/2-a) * ((a + b + c)/2-b) * ((a + b + c)/2-c))
